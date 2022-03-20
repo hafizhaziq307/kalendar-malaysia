@@ -8,7 +8,8 @@
   export let days;
   export let events;
 
-  let currentIndex = 6;
+  const d = new Date();
+  let currentIndex = d.getMonth();
   let currentMonth = {
     name: "",
     startDay: 0,
