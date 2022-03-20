@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="w-28 h-20 grid place-content-center text-6xl text-black font-bold rounded-sm 
+  class="w-28 h-20 grid place-content-center text-6xl text-black font-bold rounded-sm select-none
   {number != '' ? 'bg-white ring-2 ring-black' : ''}">
   {number}
 </div>

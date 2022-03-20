@@ -9,9 +9,6 @@
   export let events;
 
   let currentIndex = 6;
-
-  $: setCurrentMonth(months[currentIndex]);
-
   let currentMonth = {
     name: "",
     startDay: 0,
@@ -24,6 +21,8 @@
       [{}, {}, {}, {}, {}, {}, {}],
     ],
   };
+
+  $: setCurrentMonth(months[currentIndex]);
 
   function resetCurrentMonth() {
     currentMonth = {
@@ -112,11 +111,12 @@
 
 <main class="space-y-2">
   <header
-    class="rounded-sm ring-2 py-1 ring-black flex justify-between items-center bg-gradient-to-r from-blue-400 to-emerald-400 text-white">
+    class="rounded-sm ring-2 py-1 ring-black flex justify-between items-center bg-gradient-to-r from-blue-400 to-emerald-400 text-white select-none">
     <button
       on:click={() => {
         currentIndex > 0 ? currentIndex-- : currentIndex;
-      }}>
+      }}
+      class="focus:outline-none">
       <ChevronLeft />
     </button>
 
@@ -125,7 +125,8 @@
     <button
       on:click={() => {
         currentIndex < 11 ? currentIndex++ : currentIndex;
-      }}>
+      }}
+      class="focus:outline-none">
       <ChevronRight />
     </button>
   </header>
@@ -135,14 +136,14 @@
       {#each days as day}
         <div
           style="font-size:2.5rem"
-          class="font-bold w-28 h-20 grid place-content-center uppercase ring-2 ring-black rounded-sm {day.bgColor} ">
+          class="font-bold w-28 h-20 grid place-content-center uppercase ring-2 ring-black rounded-sm {day.bgColor} select-none">
           {day.title}
         </div>
       {/each}
     </div>
 
     <!-- loop through months -->
-    {#each currentMonth.days as weeks, i}
+    {#each currentMonth.days as weeks}
       <div class="space-y-2">
         <!-- loop through weeks -->
         {#each weeks as dayperWeek}

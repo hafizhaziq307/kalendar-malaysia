@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="relative bg-gray-200 w-28 h-20 overflow-hidden rounded-sm ring-2 ring-black">
+  class="relative bg-gray-200 w-28 h-20 overflow-hidden rounded-sm ring-2 ring-black select-none">
   <div class="w-full h-full">
     <!-- loop through events on the same day -->
     {#each publicHolidays as publicHoliday}
