@@ -1,10 +1,17 @@
 <script>
   export let publicHolidays;
   export let number;
+  export let currentDate;
+  export let month;
 </script>
 
 <div
   class="relative bg-gray-200 w-28 h-20 overflow-hidden rounded-sm ring-2 ring-black select-none">
+  {#if currentDate.getDate() == number && currentDate.getMonth() == month}
+    <div
+      class="absolute top-0.5 left-0.5 rounded-full bg-blue-600 border-white w-3 h-3" />
+  {/if}
+
   <div class="w-full h-full">
     <!-- loop through events on the same day -->
     {#each publicHolidays as publicHoliday}

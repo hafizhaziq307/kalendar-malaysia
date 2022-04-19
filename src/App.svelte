@@ -1,8 +1,7 @@
 <script>
-  import ChevronLeft from "./components/icons/ChevronLeft.svelte";
-  import ChevronRight from "./components/icons/ChevronRight.svelte";
-  import PublicHolidayCard from "./components/PublicHolidayCard.svelte";
-  import DayCard from "./components/DayCard.svelte";
+  import Icon from "./components/icons/Icon.svelte";
+  import Content from "./components/sections/Content.svelte";
+  import About from "./components/sections/About.svelte";
 
   export let months;
   export let days;
@@ -25,7 +24,7 @@
 
   $: setCurrentMonth(months[currentIndex]);
 
-  function resetCurrentMonth() {
+  const resetCurrentMonth = () => {
     currentMonth = {
       name: "",
       startDay: 0,
@@ -38,14 +37,14 @@
         [{}, {}, {}, {}, {}, {}, {}],
       ],
     };
-  }
+  };
 
-  function setCurrentMonth(month) {
+  const setCurrentMonth = (m) => {
     resetCurrentMonth();
 
-    currentMonth.name = month.name;
-    currentMonth.startDay = days.map((x) => x.title).indexOf(month.start);
-    currentMonth.totalDays = month.end;
+    currentMonth.name = m.name;
+    currentMonth.startDay = days.map((x) => x.title).indexOf(m.start);
+    currentMonth.totalDays = m.end;
 
     let current = 0,
       slots = 0;
@@ -107,56 +106,37 @@
         currentMonth.days[0][i] = objDay;
       }
     }
-  }
+  };
 </script>
 
-<main class="space-y-2">
+<main class="w-full min-h-screen">
   <header
-    class="rounded-sm ring-2 py-1 ring-black flex justify-between items-center bg-gradient-to-r from-blue-400 to-emerald-400 text-white select-none">
-    <button
-      on:click={() => {
-        currentIndex > 0 ? currentIndex-- : currentIndex;
-      }}
-      class="focus:outline-none">
-      <ChevronLeft />
-    </button>
-
-    <p class="text-3xl uppercase font-medium">{currentMonth.name} 2022</p>
-
-    <button
-      on:click={() => {
-        currentIndex < 11 ? currentIndex++ : currentIndex;
-      }}
-      class="focus:outline-none">
-      <ChevronRight />
-    </button>
+    class="container mx-auto flex w-full items-center justify-end py-2 px-3">
+    <About />
   </header>
 
-  <div class="flex space-x-2">
-    <div class="space-y-2">
-      {#each days as day}
-        <div
-          style="font-size:2.5rem"
-          class="font-bold w-28 h-20 grid place-content-center uppercase ring-2 ring-black rounded-sm {day.bgColor} select-none">
-          {day.title}
-        </div>
-      {/each}
-    </div>
+  <div class="space-y-2 w-[44.5rem] mx-auto">
+    <header
+      class=" rounded-sm ring-2 py-1 ring-black flex justify-between items-center bg-gradient-to-r from-blue-400 to-emerald-400 text-white ">
+      <button
+        on:click={() => {
+          currentIndex > 0 ? currentIndex-- : currentIndex;
+        }}
+        class="focus:outline-none">
+        <Icon name="chevron-left" class="w-9 h-9" />
+      </button>
 
-    <!-- loop through months -->
-    {#each currentMonth.days as weeks}
-      <div class="space-y-2">
-        <!-- loop through weeks -->
-        {#each weeks as dayperWeek}
-          {#if dayperWeek.events.length >= 1}
-            <PublicHolidayCard
-              publicHolidays={dayperWeek.events}
-              number={dayperWeek.number} />
-          {:else}
-            <DayCard number={dayperWeek.number} />
-          {/if}
-        {/each}
-      </div>
-    {/each}
+      <p class="text-3xl uppercase font-medium">{currentMonth.name} 2022</p>
+
+      <button
+        on:click={() => {
+          currentIndex < 11 ? currentIndex++ : currentIndex;
+        }}
+        class="focus:outline-none">
+        <Icon name="chevron-right" class="w-9 h-9" />
+      </button>
+    </header>
+
+    <Content {days} {currentMonth} {d} {currentIndex} />
   </div>
 </main>
