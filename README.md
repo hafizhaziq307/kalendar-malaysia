@@ -9,6 +9,7 @@
 It is created using those amazing technologies:
 - [Svelte](https://svelte.dev/)
 - [Tailwind](https://tailwindcss.com/)
+- [Headless UI](https://headlessui.com/)
 - [Tauri](https://tauri.studio/)
 - And many others!
 
