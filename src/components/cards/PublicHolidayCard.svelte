@@ -9,7 +9,7 @@
   class="relative bg-gray-200 w-28 h-20 overflow-hidden rounded-sm ring-2 ring-black select-none">
   {#if currentDate.getDate() == number && currentDate.getMonth() == month}
     <div
-      class="absolute top-0.5 left-0.5 rounded-full bg-blue-600 border-white w-3 h-3" />
+      class="absolute top-0.5 left-0.5 rounded-full bg-blue-600 border border-white w-3 h-3 z-50" />
   {/if}
 
   <div class="w-full h-full">

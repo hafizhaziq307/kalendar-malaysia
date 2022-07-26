@@ -6,61 +6,73 @@ const app = new App({
     months: [
       {
         name: "January",
+        number: 1,
         start: "sat",
         end: 31,
       },
       {
         name: "February",
+        number: 2,
         start: "tue",
         end: 28,
       },
       {
         name: "March",
+        number: 3,
         start: "tue",
         end: 31,
       },
       {
         name: "April",
+        number: 4,
         start: "fri",
         end: 30,
       },
       {
         name: "May",
+        number: 5,
         start: "sun",
         end: 31,
       },
       {
         name: "June",
+        number: 6,
         start: "wed",
         end: 30,
       },
       {
         name: "July",
+        number: 7,
         start: "fri",
         end: 31,
       },
       {
         name: "August",
+        number: 8,
         start: "mon",
         end: 31,
       },
       {
         name: "September",
+        number: 9,
         start: "thu",
         end: 30,
       },
       {
         name: "October",
+        number: 10,
         start: "sat",
         end: 31,
       },
       {
         name: "November",
+        number: 11,
         start: "tue",
         end: 30,
       },
       {
         name: "December",
+        number: 12,
         start: "thu",
         end: 31,
       },
@@ -75,304 +87,225 @@ const app = new App({
       { title: "sat", bgColor: "bg-violet-200" },
     ],
     events: [
-      // JANUARY --------------------------------------------------------------------
       {
         title: "tahun baru",
-        day: [1],
-        month: "January",
         image: "tahun baru.png",
+        date: "1/1/2022",
       },
       {
         title: "keputeraan YDP negeri sembilan",
-        day: [14],
-        month: "January",
         image: "negeri sembilan.png",
+        date: "1/14/2022",
       },
       {
         title: "thaipusam",
-        day: [18],
-        month: "January",
         image: "thaipusam.png",
+        date: "1/18/2022",
       },
-
-      // FEBRUARY --------------------------------------------------------------------
       {
         title: "tahun baru cina",
-        day: [1, 2],
-        month: "February",
         image: "tahun baru cina.png",
+        date: "2/1/2022",
       },
       {
-        title: "wilayah persekutuan",
-        day: [1],
-        month: "February",
-        image: "wilayah persekutuan.png",
+        title: "tahun baru cina",
+        image: "tahun baru cina.png",
+        date: "2/2/2022",
       },
-      {
-        title: "hari kekasih",
-        day: [14],
-        month: "February",
-        image: "hari kekasih.png",
-      },
-      {
-        title: "chap goh mei",
-        day: [15],
-        month: "February",
-        image: "chap goh mei.png",
-      },
-
-      // MARCH --------------------------------------------------------------------
       {
         title: "israk & mikraj",
-        day: [1],
-        month: "March",
         image: "israk & miraj.png",
+        date: "3/1/2022",
       },
       {
-        title: "ulang tahun pertabalan sultan terengganu",
-        day: [4],
-        month: "March",
+        title: "pertabalan sultan terengganu",
         image: "terengganu.png",
+        date: "3/4/2022",
       },
       {
         title: "keputeraan sultan johor",
-        day: [23],
-        month: "March",
         image: "johor.png",
+        date: "3/23/2022",
       },
-
-      // APRIL --------------------------------------------------------------------
       {
         title: "awal ramadhan",
-        day: [3],
-        month: "April",
         image: "ramadhan.png",
+        date: "4/3/2022",
       },
       {
         title: "hari melaka bandaraya bersejarah",
-        day: [15],
-        month: "April",
         image: "melaka.png",
+        date: "4/15/2022",
       },
       {
         title: "nuzul al-quran",
-        day: [19],
-        month: "April",
         image: "nuzul al-quran.png",
+        date: "4/19/2022",
       },
       {
         title: "keputeraan sultan terengganu",
-        day: [26],
-        month: "April",
         image: "terengganu.png",
+        date: "4/26/2022",
       },
-
-      // MAY --------------------------------------------------------------------
       {
         title: "hari pekerja",
-        day: [1],
-        month: "May",
         image: "hari pekerja.png",
+        date: "5/1/2022",
       },
       {
         title: "hari raya puasa",
-        day: [3, 4],
-        month: "May",
         image: "hari raya puasa.png",
+        date: "5/3/2022",
+      },
+      {
+        title: "hari raya puasa",
+        image: "hari raya puasa.png",
+        date: "5/4/2022",
       },
       {
         title: "hari ibu",
-        day: [8],
-        month: "May",
         image: "hari ibu.png",
+        date: "5/8/2022",
+      },
+      {
+        title: "hari wesak",
+        image: "wesak.png",
+        date: "5/15/2022",
       },
       {
         title: "keputeraan raja perlis",
-        day: [17],
-        month: "May",
         image: "perlis.png",
+        date: "5/17/2022",
       },
       {
         title: "pesta keamatan",
-        day: [30, 31],
-        month: "May",
         image: "sabah.png",
+        date: "5/30/2022",
       },
-
-      // JUNE --------------------------------------------------------------------
+      {
+        title: "pesta keamatan",
+        image: "sabah.png",
+        date: "5/31/2022",
+      },
       {
         title: "hari gawai",
-        day: [1, 2],
-        month: "June",
         image: "sarawak.png",
+        date: "6/1/2022",
       },
       {
-        title: "dragon boat festival",
-        day: [3],
-        month: "June",
-        image: "dragon boat festival.png",
+        title: "hari gawai",
+        image: "sarawak.png",
+        date: "6/2/2022",
       },
       {
         title: "keputeraan YDP agong",
-        day: [6],
-        month: "June",
         image: "agong.png",
+        date: "6/6/2022",
       },
       {
         title: "keputeraan sultan kedah",
-        day: [19],
-        month: "June",
         image: "kedah.png",
+        date: "6/19/2022",
       },
-      {
-        title: "hari bapa",
-        day: [19],
-        month: "June",
-        image: "hari bapa.png",
-      },
-
-      // JULY --------------------------------------------------------------------
       {
         title: "hari arafah",
-        day: [9],
-        month: "July",
         image: "hari arafah.png",
+        date: "7/9/2022",
       },
       {
         title: "hari jadi YDP pulau pinang",
-        day: [9],
-        month: "July",
         image: "pulau pinang.png",
+        date: "7/9/2022",
       },
       {
         title: "hari raya haji",
-        day: [10, 11],
-        month: "July",
         image: "hari raya haji.png",
+        date: "7/10/2022",
+      },
+      {
+        title: "hari raya haji",
+        image: "hari raya haji.png",
+        date: "7/11/2022",
       },
       {
         title: "hari sarawak",
-        day: [22],
-        month: "July",
         image: "sarawak.png",
+        date: "7/22/2022",
       },
       {
         title: "awal muharram",
-        day: [30],
-        month: "July",
         image: "awal muharram.png",
+        date: "7/30/2022",
       },
       {
         title: "keputeraan sultan pahang",
-        day: [30],
-        month: "July",
         image: "pahang.png",
-      },
-
-      // AUGUST --------------------------------------------------------------------
-      {
-        title: "hungry ghost festival",
-        day: [12],
-        month: "August",
-        image: "hungry ghost festival.png",
+        date: "7/30/2022",
       },
       {
         title: "hari jadi YDP melaka",
-        day: [24],
-        month: "August",
         image: "melaka.png",
+        date: "8/24/2022",
       },
       {
         title: "hari kebangsaan",
-        day: [31],
-        month: "August",
         image: "malaysia.png",
+        date: "8/31/2022",
       },
-
-      // SEPTEMBER --------------------------------------------------------------------
       {
         title: "hari hol almarhum sultan iskandar",
-        day: [1],
-        month: "September",
         image: "johor.png",
-      },
-      {
-        title: "mid autumn festval",
-        day: [10],
-        month: "September",
-        image: "mid autumn festival.png",
+        date: "9/3/2022",
       },
       {
         title: "hari malaysia",
-        day: [16],
-        month: "September",
         image: "malaysia.png",
+        date: "9/16/2022",
       },
-
-      // OCTOBER --------------------------------------------------------------------
       {
         title: "hari jadi YDP sabah",
-        day: [1],
-        month: "October",
         image: "sabah.png",
+        date: "10/1/2022",
       },
       {
         title: "hari jadi YDP sarawak",
-        day: [8],
-        month: "October",
         image: "sarawak.png",
+        date: "10/8/2022",
       },
       {
         title: "maulidur rasul",
-        day: [9],
-        month: "October",
         image: "maulidur rasul.png",
+        date: "10/9/2022",
       },
       {
         title: "hari deepavali",
-        day: [24],
-        month: "October",
         image: "hari deepavali.png",
+        date: "10/24/2022",
       },
-
-      // NOVEMBER --------------------------------------------------------------------
       {
         title: "keputeraan sultan perak",
-        day: [4],
-        month: "November",
         image: "perak.png",
+        date: "11/4/2022",
       },
       {
         title: "keputeraan sultan kelantan",
-        day: [11, 12],
-        month: "November",
         image: "kelantan.png",
+        date: "11/11/2022",
       },
-
-      // DECEMBER --------------------------------------------------------------------
+      {
+        title: "keputeraan sultan kelantan",
+        image: "kelantan.png",
+        date: "11/12/2022",
+      },
       {
         title: "keputeraan sultan selangor",
-        day: [11],
-        month: "December",
         image: "selangor.png",
-      },
-      {
-        title: "winter solstice",
-        day: [22],
-        month: "December",
-        image: "winter solstice.png",
-      },
-      {
-        title: "christmas eve",
-        day: [24],
-        month: "December",
-        image: "christmas eve.png",
+        date: "12/11/2022",
       },
       {
         title: "hari krismas",
-        day: [25],
-        month: "December",
         image: "hari krismas.png",
+        date: "12/25/2022",
       },
     ],
   },

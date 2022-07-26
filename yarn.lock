@@ -49,6 +49,11 @@
   "resolved" "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.21.tgz"
   "version" "1.0.0-next.21"
 
+"@rgossiaux/svelte-headlessui@^1.0.2":
+  "integrity" "sha512-sauopYTSivhzXe1kAvgawkhyYJcQlK8Li3p0d2OtcCIVprOzdbard5lbqWB4xHDv83zAobt2mR08oizO2poHLQ=="
+  "resolved" "https://registry.npmjs.org/@rgossiaux/svelte-headlessui/-/svelte-headlessui-1.0.2.tgz"
+  "version" "1.0.2"
+
 "@rollup/plugin-commonjs@^17.0.0":
   "integrity" "sha512-PoMdXCw0ZyvjpCMT5aV4nkL0QywxP29sODQsSGeDpr/oI49Qq9tRtAsb/LbYbDzFlOydVEqHmmZWFtXJEAX9ew=="
   "resolved" "https://registry.npmjs.org/@rollup/plugin-commonjs/-/plugin-commonjs-17.1.0.tgz"
@@ -724,6 +729,16 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
 
+"prettier-plugin-tailwindcss@^0.1.13":
+  "integrity" "sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw=="
+  "resolved" "https://registry.npmjs.org/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.1.13.tgz"
+  "version" "0.1.13"
+
+"prettier@^2.7.1", "prettier@>=2.2.0":
+  "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
+  "version" "2.7.1"
+
 "queue-microtask@^1.2.2":
   "integrity" "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
   "resolved" "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
@@ -921,12 +936,7 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
-"svelte-click-outside@^1.0.0":
-  "integrity" "sha512-TVDn5Vd8L0WI0Y9BFh/2I7judkIqYCbFKkGwGl/f8D0inwBFNyU0weKhrbJY4VQtYnWriq0NPl+mIYGisgALbw=="
-  "resolved" "https://registry.npmjs.org/svelte-click-outside/-/svelte-click-outside-1.0.0.tgz"
-  "version" "1.0.0"
-
-"svelte@^3.0.0", "svelte@>=3.5.0":
+"svelte@^3.0.0", "svelte@^3.44.0", "svelte@>=3.5.0":
   "integrity" "sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg=="
   "resolved" "https://registry.npmjs.org/svelte/-/svelte-3.46.4.tgz"
   "version" "3.46.4"

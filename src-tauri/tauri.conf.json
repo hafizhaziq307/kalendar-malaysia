@@ -1,7 +1,7 @@
 {
   "package": {
     "productName": "Malaysia-Calendar",
-    "version": "0.1.1"
+    "version": "0.2.0"
   },
   "build": {
     "distDir": "../public",
@@ -13,7 +13,7 @@
     "bundle": {
       "active": true,
       "targets": ["deb", "msi"],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tauri.dev.kalendar-malaysia",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -24,17 +24,15 @@
       "resources": [],
       "externalBin": [],
       "copyright": "",
-      "category": "DeveloperTool",
+      "category": "Utility",
       "shortDescription": "",
       "longDescription": "",
       "deb": {
-        "depends": [],
-        "useBootstrapper": false
+        "depends": []
       },
       "macOS": {
         "frameworks": [],
         "minimumSystemVersion": "",
-        "useBootstrapper": false,
         "exceptionDomain": "",
         "signingIdentity": null,
         "providerShortName": null,
@@ -50,13 +48,13 @@
       "active": false
     },
     "allowlist": {
-      "all": true
+      "all": false
     },
     "windows": [
       {
-        "title": "Malaysia Calendar",
+        "title": "Kalendar Malaysia",
         "width": 800,
-        "height": 700,
+        "height": 720,
         "minWidth": 800,
         "minHeight": 720,
         "fullscreen": false
