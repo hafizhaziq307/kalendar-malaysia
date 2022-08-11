@@ -7,7 +7,7 @@
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
     "tauri": "tauri",
-    "watch": "npx tailwindcss -i ./public/tailwind.css -o ./public/global.css --watch"
+    "watch": "npx tailwindcss -i ./public/tailwind.css -o ./public/global.css --watch --minify"
   },
   "devDependencies": {
     "@rgossiaux/svelte-headlessui": "^1.0.2",
