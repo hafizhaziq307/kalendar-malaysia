@@ -1,7 +1,7 @@
 # kalendar-Malaysia
  a desktop application used as a calendar for Malaysian
  
-<img src="./res/output.png" alt="kalendar-malaysia" >
+<img src="./res/output.png" alt="kalendar-malaysia" width="60%" height="60%" >
 
 ---
 
