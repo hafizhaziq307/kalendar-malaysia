@@ -1,19 +1,26 @@
 {
-  "package": {
-    "productName": "Malaysia-Calendar",
-    "version": "0.2.0"
-  },
   "build": {
-    "distDir": "../public",
-    "devPath": "http://localhost:8080",
-    "beforeDevCommand": "yarn dev",
-    "beforeBuildCommand": "yarn build"
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "kalendar-malaysia",
+    "version": "0.3.0"
   },
   "tauri": {
+    "allowlist": {
+      "all": false
+    },
     "bundle": {
       "active": true,
-      "targets": ["deb", "msi"],
-      "identifier": "hafizhaziq.dev.kalendar-malaysia",
+      "category": "Utility",
+      "copyright": "© 2022 hafiz haziq",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -21,47 +28,43 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "resources": [],
-      "externalBin": [],
-      "copyright": "© 2022 hafiz haziq",
-      "category": "Utility",
-      "shortDescription": "",
+      "identifier": "hafizhaziq.dev.kalendar-malaysia",
       "longDescription": "",
-      "deb": {
-        "depends": []
-      },
       "macOS": {
-        "frameworks": [],
-        "minimumSystemVersion": "",
+        "entitlements": null,
         "exceptionDomain": "",
-        "signingIdentity": null,
+        "frameworks": [],
         "providerShortName": null,
-        "entitlements": null
+        "signingIdentity": null
       },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
         "timestampUrl": ""
       }
     },
+    "security": {
+      "csp": null
+    },
     "updater": {
       "active": false
     },
-    "allowlist": {
-      "all": false
-    },
     "windows": [
       {
-        "title": "Kalendar Malaysia",
-        "width": 800,
-        "height": 720,
-        "minWidth": 800,
-        "minHeight": 720,
-        "fullscreen": false
+        "fullscreen": false,
+        "height": 650,
+        "width": 700,
+        "minHeight": 650,
+        "minWidth": 700,
+        "decorations": true,
+        "resizable": true,
+        "title": "kalendar-malaysia",
+        "transparent": false,
+        "center": true
       }
-    ],
-    "security": {
-      "csp": null
-    }
+    ]
   }
 }

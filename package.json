@@ -1,33 +1,28 @@
 {
-  "name": "Kalendar-Malaysia",
-  "version": "1.0.0",
+  "name": "kalendar-malaysia",
   "private": true,
+  "version": "0.3.0",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "tauri": "tauri",
-    "watch": "npx tailwindcss -i ./public/tailwind.css -o ./public/global.css --watch --minify"
-  },
-  "devDependencies": {
-    "@rgossiaux/svelte-headlessui": "^1.0.2",
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "@tauri-apps/cli": "^1.0.5",
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.0.0",
-    "tailwindcss": "^3.1.6"
+    "watch": "npx tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css --watch --minify"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.0.2",
-    "sirv-cli": "^2.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@tauri-apps/api": "^1.1.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.1.0",
+    "@types/node": "^18.7.10",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.2"
   }
 }
