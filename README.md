@@ -7,15 +7,15 @@
 
 ## Stack
 It is created using those amazing technologies:
-- [Svelte](https://svelte.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind](https://tailwindcss.com/)
-- [Headless UI](https://headlessui.com/)
 - [Tauri](https://tauri.studio/)
 - And many others!
 
 ---
 
 ## License
->You can check out the full license [here](https://github.com/hafizhaziq307/kalendar-Malaysia/blob/main/LICENSE)
+>You can check out the full license [here](https://github.com/hafizhaziq307/kalendar-malaysia/blob/main/LICENSE)
 
 This project is licensed under the terms of the **MIT** license.
