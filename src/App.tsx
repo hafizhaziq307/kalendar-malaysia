@@ -160,7 +160,7 @@ function App() {
                 {month.days.map((week: any, i: number) => (
                   // per week
                   <article key={i} className="space-y-1">
-                    {week.map((day: any, j: number) => (
+                    {week.map((day: any) => (
                       //per days
                       <>
                         {day.number == "" ? (
