@@ -50,7 +50,7 @@ function App() {
         }
 
         // assign date
-        let tempDate = data_month.number + "/" + slot + "/2022";
+        let tempDate = data_month.number + "/" + slot + "/2023";
 
         // assign event
         let events: any = [];
@@ -78,7 +78,7 @@ function App() {
       if (remainingDays > 0) {
         for (let i = 0; i < remainingDays; i++) {
           // assign date
-          let tempDate = data_month.number + "/" + slot + "/2022";
+          let tempDate = data_month.number + "/" + slot + "/2023";
 
           // assign event
           let events: any = [];
@@ -135,7 +135,7 @@ function App() {
         <header className="rounded-md flex justify-between items-center text-white py-1 px-2 mb-1 bg-gradient-to-r from-blue-400 to-emerald-400">
           <PrevMonth prevMonth={prevMonth} />
           <p className="text-2xl uppercase font-semibold">
-            {currentMonthTitle} 2022
+            {currentMonthTitle} 2023
           </p>
           <NextMonth nextMonth={nextMonth} />
         </header>

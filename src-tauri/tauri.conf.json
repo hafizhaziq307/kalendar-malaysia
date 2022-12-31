@@ -16,7 +16,7 @@
     "bundle": {
       "active": true,
       "category": "Utility",
-      "copyright": "© 2022 hafiz haziq",
+      "copyright": "© 2023 hafiz haziq",
       "deb": {
         "depends": []
       },
