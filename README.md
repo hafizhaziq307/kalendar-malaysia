@@ -1,21 +1,8 @@
-# kalendar-Malaysia
- a desktop application used as a calendar for Malaysian
- 
-<img src="./res/output.png" alt="kalendar-malaysia" width="60%" height="60%" >
+# Svelte + Vite
 
----
+This template should help get you started developing with Tauri and Svelte in Vite.
 
-## Stack
-It is created using those amazing technologies:
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind](https://tailwindcss.com/)
-- [Tauri](https://tauri.studio/)
-- And many others!
+## Recommended IDE Setup
 
----
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
 
-## License
->You can check out the full license [here](https://github.com/hafizhaziq307/kalendar-malaysia/blob/main/LICENSE)
-
-This project is licensed under the terms of the **MIT** license.

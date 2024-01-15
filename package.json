@@ -1,28 +1,23 @@
 {
   "name": "kalendar-malaysia",
   "private": true,
-  "version": "0.4.0",
+  "version": "0.4.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "watch": "npx tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css --watch --minify"
+    "watch": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch --minify"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@tauri-apps/api": "^1.1.0"
+    "@tauri-apps/api": "^1.4.0"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.1.0",
-    "@types/node": "^18.7.10",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.0",
-    "tailwindcss": "^3.4.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.2"
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tauri-apps/cli": "^1.4.0",
+    "svelte": "^4.0.5",
+    "tailwindcss": "^3.4.1",
+    "vite": "^4.4.4"
   }
 }
